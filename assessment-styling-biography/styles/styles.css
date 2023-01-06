@@ -1,0 +1,53 @@
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    border: 1px solid navy;
+    padding: 25px;
+    width: 760px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(67, 67, 190);
+    padding: 10px 5px 5px 15px;
+   
+}
+
+hr {
+    border-bottom: 0px solid navy;
+    width: calc(100% - 20px);
+    margin: 0 auto;   
+}
+
+.job-title {
+    color: #999;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: rgba(0,0,0, 0.8);
+    
+}
+
+h2 {
+    font-weight: bold;
+}
+
+ul {
+    
+    padding: 35px;
+}
+a:link, a:visited {
+    color: #fb6542;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
