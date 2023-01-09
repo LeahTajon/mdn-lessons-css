@@ -19,11 +19,47 @@
              border-bottom-color: hotpink;
         }
 
+        /* Inline-block */
+        span {
+            margin: 20px;
+            padding: 20xp;
+            width: 80px;
+            height: 50px;
+            background-color: lightblue;
+            border: 2px solid blue;
+        }
+
+         /* Inline-block - Example */
+         .links-list a {
+            background-color: rgb(179,57,81);
+            color: #fff;
+            text-decoration: none;
+            padding: 1em 2em;
+            display: inline-block;
+         }
+
+         .links-list a:hover {
+            background-color: rgb(66, 28, 40);
+            color: #fff;
+         }
     </style>
 </head>
 <body>
+    
     <div class="container">
         <div class="box">Change my borders</div>
-    </div>
+    </div> 
+
+    <!-- inline block -->
+    <p>I am a paragraph and this is a <span>span</span> inside that paragraph. A span is an inline element and so does not respect width and height.</p>
+
+    <!-- Inline-block example -->
+    <nav>
+        <ul class="links-list">
+            <li><a href="">Link one</a></li>
+            <li><a href="">Link two</a></li>
+            <li><a href="">Link three</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
