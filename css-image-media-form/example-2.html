@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #2</title>
+    <style>
+        /*
+        *   In a flex or grid layout elements are stretched by default to fill the entire
+        *   area. Images will NOT stretch, and instead will be aligned to the start
+        *   of the grid area or flex container.
+        */
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            gap: 20px;
+        }
+
+        .wrapper > div {
+            background-color: rebeccapurple;
+            border-radius: .5em;
+        }
+
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="https://mdn.github.io/css-examples/learn/images/star.png" alt="star">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example #3</title>
+    <style>
+        /*  In the example below we have styled some text inputs using CSS-
+        *   you can see that things such as borders, margins and padding all 
+        *   apply as you would expect. We are using attribute selectors to 
+        *   target the different input types.                                                
+        *
+        */
+
+        input[type="text"],
+        input[type="email"] {
+            border: 2px solid #000;
+            margin: 0 0 1em 0;
+            padding: 10px;
+            width: 50%;
+        }
+
+        input[type="submit"] {
+            border: 3px solid #333;
+            background-color: #999;
+            border-radius: 5px;
+            padding: 10px 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="sumbmit"]:hover, input[type="submit"]:focus {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
